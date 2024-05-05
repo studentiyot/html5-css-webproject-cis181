@@ -1,7 +1,6 @@
-# html5-css-portfolio
-
-
 <img width="1834" alt="myREADME-BANNER" src="https://github.com/studentiyot/studentiyot/assets/158574576/9bd1426f-27bd-44ad-a58b-7f2dda2a76aa">
+
+# html5-css-portfolio
 
 ### Hello World! 👋
 
