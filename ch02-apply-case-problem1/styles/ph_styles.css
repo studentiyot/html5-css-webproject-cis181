@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 2 - Case Problem 1
+
+   PHCT Typographic Style Sheet
+   Author: Leslie Berrie / mazal bohbot berrie
+   Date:   February 01, 2024
+
+   Filename: ph_styles.css -v.0.01
+*/
+
+
+/* Font Collection */
+
+@font-face {
+  font-family: nineteenForty-two;
+  src: url('../assets/1942.woff') format('woff'),
+       url('../assets/1942.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Champagne;
+  src: url('../assets/cac_champagne.woff') format('woff'),
+       url('../assets/cac_champagne.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: DobkinPlain;
+  src: url('../assets/DobkinPlain.woff') format('woff'),
+  url('../assets/DobkinPlain.ttf') format('truetype');
+}
+
+
+/* Structural Styles */
+
+html {
+  background-color: hsl(91, 8%, 56%);
+}
+
+body {
+  background-color: hsl(58, 31%, 84%);
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+body > p {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+p {
+  margin: 0px;
+  padding: 5px 25px 25px 25px;
+}
+
+header {
+  background-color: black;
+}
+
+address {
+  font-style: normal;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+
+/* Navigation Styles */
+
+nav a {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  padding: 10px 0px 10px 0px;
+}
+nav > ul > li > a:link, nav > ul > li > a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: hsla(0, 0%, 42%, 0.4);
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+  color: hsla(0, 0%, 100%, 0.7);
+  background-color: hsl(0, 0%, 100%, 0.7);
+  text-decoration: underline;
+}
+
+/* Section Styles */
+
+section.playbill h1 {
+  font-size: 3em;
+  font-weight: normal;
+  margin: 0px;
+  padding: 20px 0px 10px 20px;
+}
+
+section#play1 {
+  background-color: hsl(240, 100%, 88%);
+}
+
+section#play1 h1 {
+  font-family: Champagne, cursive;
+}
+
+section#play2 {
+  background-color: hsl(25, 88%, 73%);
+}
+
+section#play2 h1 {
+  font-family: nineteenForty-two, 'Times New Roman', Times, serif;
+}
+
+section#play3 {
+  background-color: hsl(0, 100%, 75%);
+}
+
+section#play3 h1 {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+section#play4 {
+  background-color: hsl(296, 86%, 86%);
+}
+section#play4 h1 {
+  font-family: DobkinPlain, cursive;
+}
+
+
+/* Description List Styles */
+
+dt {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: hsla(0, 0%, 0%, 0.4);
+}
+
+dd {
+  font-size: 1.3em;
+  margin: 0px 0px 10px 0px;
+}

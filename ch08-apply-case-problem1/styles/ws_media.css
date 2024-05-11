@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*
+New Perspectives on HTML5 and CSS3, 8th Edition
+Tutorial 8 - Case Problem 1
+
+Rhetoric in the United States Styles for Media
+Author: Leslie Berrie / mazal bohbot berrie
+Date:   March 19, 2024
+
+Filename: ws_media.css -v.x.xx
+*/
+
+
+/* VideoPlayer Styles */
+
+video {
+  filter: drop-shadow(8px 8px 15px rgb(51, 51, 51));
+  display: block;
+  margin: 5px auto;
+  width: 90%;
+}
+
+
+/* Track Styles */
+
+::cue(.Caption) {
+  font: 1.3em sans-serif;
+  color: rgba(221, 128, 160);
+  background: rgba(255, 255, 255, 0.8);
+}

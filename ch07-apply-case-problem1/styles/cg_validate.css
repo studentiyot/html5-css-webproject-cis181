@@ -1,0 +1,35 @@
+/*
+New Perspectives on HTML5 and CSS3, 8th Edition
+Tutorial 7 - Case Problem 1
+
+ACGIP Registration Validation Style Sheet
+Author: Leslie Berrie / mazal bohbot berrie
+Date:   March 17, 2024
+
+Filename: cg_validate.css -v.x.xx
+*/
+
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+  background-color: rgb(245, 245, 140);
+}
+
+input#fnBox:focus:valid,
+input#lnBox:focus:valid,
+input#mailBox:focus:valid,
+input#phoneBox:focus:valid,
+input#idBox:focus:valid {
+  background: rgb(220, 255, 220) url(../img/cg_valid.png) bottom
+  right/contain no-repeat;
+}
+
+input#fnBox:focus:invalid,
+input#lnBox:focus:invalid,
+input#mailBox:focus:invalid,
+input#phoneBox:focus:invalid,
+input#idBox:focus:invalid {
+  background: rgb(255, 232, 233) url(../img/cg_invalid.png) bottom
+  right/contain no-repeat;;
+}

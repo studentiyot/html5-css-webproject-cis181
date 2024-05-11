@@ -1,0 +1,11 @@
+# Document Setup
+
+Open the *cg_register.html* and *cg_validate.css* files and enter your **name** and the **date** in the comment section of each file. Return to the *cg_register.html* file and add a link to the *cg_forms.css* and *cg_validate.css* style sheet files to the document `head`. Add a `script` element to the document `head` that loads the *cg_script.js* file.
+
+# Create the Web Form
+
+Scroll down to the `section` element and after the nested `p` element insert a web form element that employs the action at `http://www.example.com/cg/register` via the `post` method. Add the labels, input controls, and textarea boxes shown in *Figure 7–65* and described in *Figure 7–66*. Place the input boxes directly after the labels and associate each `label` with its form control. You do not need to enclose these elements within `div` elements. Note that the address field should be entered within a `textarea` box.
+
+![Table of fields and controls from the registration form. The table has 8 rows and 6 columns. The column headings from left to right are Label, Data Field, Control ID, Type, Required, and Placeholder. The row details are as follows. Row 1: Label, Title; Data Field, title; Control ID, titleBox; Type, text; Required, no; Placeholder, empty cell. Row 2: Label, First Name asterisk; Data Field, firstName; Control ID, fnBox; Type, text; Required, yes; Placeholder, empty cell. Row 3:  Label, Last Name asterisk; Data Field, lastName; Control ID, lnBox; Type, text; Required, yes; Placeholder, empty cell. Row 4:  Label, Address asterisk; Data Field, address; Control ID, addBox; Type, empty cell; Required, yes; Placeholder, empty cell. Row 5:  Label, Company or University; Data Field, group; Control ID, groupBox; Type, text; Required, no; Placeholder, empty cell. Row 6:  Label, Email asterisk; Data Field, email; Control ID, mailBox; Type, email; Required, yes; Placeholder, empty cell. Row 7:  Label, Phone Number asterisk; Data Field, phoneNumber; Control ID, phoneBox; Type, tel; Required, yes; Placeholder, parentheses nnn parentheses nnn dash nnnn. Row 8:  Label, ACGIP Membership Number; Data Field, acgipID; Control ID, idBox; Type, text; Required, no; Placeholder, acgip dash nnnnnn.](https://cdn.filestackcontent.com/I6ifoI4GRqt7Lb9tFnQP)
+<sup>*Figure 7-66*</sup>
+

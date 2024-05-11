@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.ico?">
+
+  <title>CGIP Registration Form</title>
+  <link rel="stylesheet" href="styles/cg_base.css">
+  <link rel="stylesheet" href="styles/cg_styles.css">
+  <link rel="stylesheet" href="styles/cg_forms.css">
+  <link rel="stylesheet" href="styles/cg_validate.css">
+  <script src="js/cg_script.js"></script>
+
+
+<!--
+New Perspectives on HTML5 and CSS3, 8th Edition
+Tutorial 7 - Case Problem 1
+
+CGIP Registration Form
+Author: Leslie Berrie / mazal bohbot berrie
+Date: March 17, 2024
+
+Filename: cg_register.html v.x.xx
+-->
+</head>
+
+<body>
+  <header>
+    <img src="img/cg_logo.png" alt="Computer Graphics and Image Processing" id="logoimg">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">home page</a></li>
+      <li><a href="#">keynote address</a></li>
+      <li><a href="#">speakers</a></li>
+      <li class="newgroup"><a href="#">general session</a></li>
+      <li><a href="#">abstracts</a></li>
+      <li><a href="#">programs</a></li>
+      <li><a href="#">workshops</a></li>
+      <li class="newgroup"><a href="#">committees</a></li>
+      <li><a href="#">executive session</a></li>
+      <li><a href="#">advisory council</a></li>
+      <li class="newgroup"><a href="#">travel info</a></li>
+      <li><a href="#">accommodations</a></li>
+      <li><a href="#">banquet</a></li>
+      <li><a href="#">family attractions</a></li>
+      <li class="newgroup"><a href="#">registration</a></li>
+      <li class="newgroup"><a href="#">ACGIP home page</a></li>
+      <li><a href="#">tour Sante Fe</a></li>
+      <li><a href="#">links</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h1>Conference Registration Form</h1>
+    <p>Required Item (*)</p>
+
+      <!-- = = = DATA: Registration Form = = = -->
+    <form id="registration" action="http://www.example.com/cg/register" method="post">
+      <fieldset id="regInfo">
+        <legend>Registration Form</legend>
+
+          <label for="titleBox">Title</label>
+          <select id="titleBox" size="1">
+            <option value="mr">Mr.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="ms">Ms.</option>
+            <option value="prof">Prof.</option>
+            <option value="dr">Dr.</option>
+            <option value="assisprof">Assist. Prof.</option>
+            <option value="assocprof">Assoc. Prof</option>
+          </select>
+
+          <label for="fnBox">First Name*</label>
+          <input type="text" id="fnBox" required>
+
+          <label for="lnBox">Last Name*</label>
+          <input type="text" id="lnBox" required>
+
+          <label for="addBox">Address*</label>
+          <textarea name="address" id="addBox"></textarea>
+
+          <label for="groupBox">Company or University</label>
+          <input type="text" id="groupBox">
+
+          <label for="mailBox">E-mail*</label>
+          <input type="email" id="mailBox" required>
+
+          <label for="phoneBox">Phone Number*</label>
+          <input type="tel" id="phoneBox" placeholder="(nnn)nnn-nnnn"
+                 required pattern="^\d{10}$|^(\(\d{3}\)\s*)?">
+                 <!-- \d{3}[\s-]?\d{4}$ -->
+
+          <label for="idBox">ACGIP Membership Number</label>
+          <input type="text" id="idBox" placeholder="acgip-nnnnnn" pattern="^acgip\-\d{6}$">
+
+          <label for="regList">Registration Category</label>
+          <select name="rigisterType" id="regList" size="1">
+            <option value="member">ACGIP Member ($695)</option>
+            <option value="nonmember">Non-Member ($795)</option>
+            <option value="student">Student ($310)</option>
+            <option value="poster">Poster($95)</option>
+            <option value="guest">Guest($35)</option>
+          </select>
+      </fieldset>
+
+      <!-- * * * SUBMIT BUTTON * * * -->
+      <p>
+        <input type="submit" value="continue">
+      </p>
+    </form>
+  </section>
+
+  <aside>
+    <dl>
+      <dt>ACGIP Member ($695)</dt>
+      <dd>Eligible to attend all sessions and banquet</dd>
+      <dt>Non-Member ($795)</dt>
+      <dd>Eligible to attend all sessions and banquet</dd>
+      <dt>Student ($310)</dt>
+      <dd>Eligible to attend all sessions. <a href="#">Proof</a> of
+        student status required</dd>
+      <dt>Poster ($95)</dt>
+      <dd>Eligible to attend display hall and vendor stations</dd>
+      <dt>Guest ($35)</dt>
+      <dd>Eligible to attend banquet only</dd>
+    </dl>
+  </aside>
+
+  <footer>
+    Association of Computer Graphics and Image Processing
+  </footer>
+</body>
+</html>
